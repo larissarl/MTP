@@ -1,0 +1,20 @@
+﻿Build started 23/08/2016 09:44:18.
+     1>Project "C:\Users\1E30\Documents\MTP\aula20160823\TESTANDO\TESTANDO\TESTANDO.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\TESTANDO.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\1E30\Documents\MTP\aula20160823\TESTANDO\Debug\TESTANDO.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TESTANDO.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\1E30\Documents\MTP\aula20160823\TESTANDO\Debug\TESTANDO.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\1E30\Documents\MTP\aula20160823\TESTANDO\Debug\TESTANDO.lib" /MACHINE:X86 Debug\teste.obj
+     1>teste.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         TESTANDO.vcxproj -> C:\Users\1E30\Documents\MTP\aula20160823\TESTANDO\Debug\TESTANDO.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\1E30\Documents\MTP\aula20160823\TESTANDO\Debug\TESTANDO.exe;#1" /manifest Debug\TESTANDO.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\TESTANDO.unsuccessfulbuild".
+         Touching "Debug\TESTANDO.lastbuildstate".
+     1>Done Building Project "C:\Users\1E30\Documents\MTP\aula20160823\TESTANDO\TESTANDO\TESTANDO.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.95
