@@ -1,27 +1,41 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
+char * recebeTexto (char * texto);
+char * InicializaTexto();
 
 int main()
 {
-    char * texto=malloc(sizeof(char));
-    texto[0]='\0';
-    printf("Entre com um texto:\n");
-    recebetexto(texto);
-    printf("\n%s\n",texto);
+    char * texto;
+    texto=InicializaTexto();
+    printf("Entre com seu texto(Entre com '#'+ENTER para sair)");
+    texto=recebeTexto(texto);
+    printf("\nO que tem na HEP::\n");
+    printf("%s\n",texto);
+    free(texto);
     return 0;
 }
 
-void recebetexto (char *texto)
+char *InicializaTexto()
 {
-    int c,tamanho=srtlen(texto);
+    char * texto;
+    texto=(char *) malloc (sizeof(char));
+    texto[0]='\0';
+    return texto;
+}
+
+char * recebeTexto (char * texto)
+{
+    int c,tamanho = 0;
     do{
-       c=getchar();
-       if (c!= '#'){
-        texto[tamanho]=c;
-        tamanho++;
-        texto=realloc(texto,(tamanho+1)*sizeof(char));
-        texto[tamanho]='\0';
-       }
-    }while (c != '#');
+      c = getchar();
+      if (c!='#')
+      {
+          tamanho++;
+          texto =(char *) realloc(texto,(tamanho+1)*sizeof(char));
+          texto[tamanho]='\0';
+          texto[tamanho-1]=c;
+
+      }
+    }while(c!='#');
+    return texto;
 }
